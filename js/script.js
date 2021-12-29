@@ -100,7 +100,7 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      var chosenCategoryShortName = chooseRandomCategory(categoryShort); 
+      var chosenCategoryShortName = chooseRandomCategory(categoryHtml); 
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlToInsertIntoMainPage,
         "randomCategoryShortName",
         chosenCategoryShortName);
